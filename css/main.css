@@ -1,0 +1,422 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Phần header */
+
+.flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background-color: #279cd2;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+
+}
+
+.header > div >img{
+    width: 60px;
+}
+
+.font > div{
+    font-family: cursive;
+    padding: 0.1rem;
+    font-weight: bolder;
+}
+
+ul.menu{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul.menu > li >a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem 1.5rem;
+    font-size: small;
+    font-weight: bolder;
+}
+
+ul.menu >li > a:hover{
+    text-decoration: underline;
+}
+
+.header:last-child{
+    right: 0;
+}
+
+.fa-solid{
+    font-size: large;
+}
+
+/* 1. Phần nav */
+
+nav{
+    background-color: white;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav > ul{
+    justify-content: center;
+}
+
+ul.menunav{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+}
+
+ul.menunav li{
+    position: relative;
+}
+
+ul.menunav >li >a{
+    text-decoration: none;
+    color: #1e4456;
+    display: block;
+    padding: 1rem 3rem;
+    font-weight: bold;
+
+}
+
+ul.menunav >li >a:hover{
+    background-color: #1e4456;
+    color: white;
+}
+
+/* 2. Phần nav_menu */
+
+.menunav li {
+    position: relative;
+}
+
+.menunav a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menunav a:hover {
+    background-color: #f0f0f0;
+}
+
+        /* Chỉnh mũi tên sổ xuống */
+.menunav li > a .fa-chevron-right {
+    margin-left: 5px;
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+.menunav li:hover > .dropdown {
+    display: block;
+}
+
+
+.menunav li:hover > a .fa-chevron-right {
+    transform: rotate(90deg); /* Xoay mũi tên khi hover */
+}
+
+/* nav_menu con */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown li {
+    width: 200px; /* Điều chỉnh độ rộng của menu con */
+}
+
+.dropdown a {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+/* 2. Banner đầu trang */
+
+.pic{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.pic img{
+    width: 100%;
+    display: block;
+}
+
+div.down{
+    position: absolute; 
+    bottom: 0;
+    font-size: larger;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5); 
+    animation: bounce 3s infinite;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+div.down::after{
+    text-align: center;
+    font-family: FontAwesome;
+    content: "\f078";
+    display: block;
+    box-sizing: inherit;
+}
+
+@keyframes bounce{
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-15px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+} 
+
+/* Banner*/
+
+.slider >div >img{
+    width: 100%;
+}
+
+/* đào tạo */
+
+.train{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #1e4456;
+}
+
+.train-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.row{
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.train-col {
+    flex-basis: 31%;
+    background: #d4dbcd;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: box-shadow 0.5s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.train-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.train:last-child div{
+    border: 10px solid;
+}
+
+    /* h4 */
+h4{
+    border: 2px solid;
+    width: fit-content;
+    margin: 0 auto;
+}
+/* cơ sở  */
+.campus {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;   
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226, 0, 0, 0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* cơ sở vật chất */
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.facilities-col{
+    flex-basis:31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.facilities-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.facilities-col h3{
+   margin-top: 16px;
+   margin-bottom: 15px;
+   text-align: left;
+   text-align: center;
+}
+
+/* liên hệ */
+.cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    }
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/* footer */
+footer{
+    background-color: #279cd2;
+    color: white;
+}
+
+        /* trái */
+.left{
+    width: 33%;
+    font-size: large;
+}
+
+.left > div > img{
+    width: 100px;
+}
+
+ul.address{
+    list-style-type: none;
+}
+
+ul.address li{
+    margin: 10px;
+}
+
+ul.address >li >a{
+    color: white;
+}
+
+.left > div{
+    align-items: center;
+}
+
+        /* giữa */
+.between{
+    width: 33%;
+    text-align: center;
+}
+
+.between > ul{
+    list-style-type: none;
+}
+
+.between > ul > li > a{
+    color: white;
+}
+
+.between ul >li{
+    font-size: large;
+    padding: 10px;
+}
+        /* phải */
+.right{
+    width: 33%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.right div{
+    font-size: large;
+}
+
+.icon{
+    margin-top: 10%
+}
+
+.icon > div > a > img{
+    width: 50px;
+}
