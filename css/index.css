@@ -58,6 +58,16 @@ ul.menu >li > a:hover{
     font-size: large;
 }
 
+/* go to top */
+#gtt{
+    display: block;
+    color: #1e4456;
+    width: 60px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999999;
+}
 /* 1. Phần nav */
 
 nav{
@@ -98,7 +108,6 @@ ul.menunav >li >a:hover{
 }
 
 /* 2. Phần nav_menu */
-
 .menunav li {
     position: relative;
 }
@@ -206,8 +215,76 @@ div.down::after{
 
 /* Banner*/
 
-.slider >div >img{
+.slider{
+    width: 1300px;
+    max-width: 100vw;
+    height: 500px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 1s;
+}
+
+.list img{
+    width: 1300px;
+    height: 100%;
+    max-width: 100vw;
+}
+
+.button{
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff5;
+    color: #279cd2;
+    border: none;
+    font-family: monospace;
+    font-size: 30px;
+}
+
+.dots{
+    position: absolute;
+    bottom: 10px;
+    color: #279cd2;
+    left: 0;
     width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.dots li{
+    list-style-type: none;
+    width: 10px;
+    height: 10px;
+    background-color: #279cd2;
+    margin: 20px;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.dots li.active{
+    width: 30px;
 }
 
 /* đào tạo */
@@ -227,6 +304,15 @@ h1{
 .train-col img{
     width: 100%;
     border-radius: 10px;
+    transition: transform 1s;
+}
+
+.train-col{
+    overflow: hidden;
+}
+
+.train-col img:hover{
+    transform: scale(1.1);
 }
 
 .row{
@@ -258,12 +344,31 @@ h3 {
     border: 10px solid;
 }
 
+section.train::after{
+    content: " ";
+    background-color: black;
+    margin: 10px 0;
+    height: 1px;
+    display: block;
+}
+
     /* h4 */
-h4{
+h4 > a{
     border: 2px solid;
     width: fit-content;
     margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #279cd2;
+    font-size: 20px;
+    color: #fff;
 }
+
+    /* thẻ p */
+p{
+    font-size: 20px;
+}
+
 /* cơ sở  */
 .campus {
     width: 80%;
@@ -311,6 +416,14 @@ h4{
     opacity: 1;
 }
 
+section.campus::after{
+    content: " ";
+    background-color: black;
+    margin: 10px 0;
+    height: 1px;
+    display: block;
+}
+
 /* cơ sở vật chất */
 .facilities{
     width: 80%;
@@ -327,29 +440,18 @@ h4{
 .facilities-col img{
     width: 100%;
     border-radius: 10px;
+    transition: transform 1s;
 }
+
+.facilities-col img:hover{
+    transform: scale(1.1);
+}
+
 .facilities-col h3{
    margin-top: 16px;
    margin-bottom: 15px;
    text-align: left;
    text-align: center;
-}
-
-/* liên hệ */
-.cta{
-    margin: 100px auto;
-    width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../image/banner.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    text-align: center;
-    padding: 100px 0;
-    }
-.cta h1{
-    color: #fff;
-    margin-bottom: 40px;
-    padding: 0;
 }
 
 /* footer */
@@ -402,6 +504,11 @@ ul.address >li >a{
     font-size: large;
     padding: 10px;
 }
+
+.between li a:hover{
+    text-decoration: underline;
+}
+
         /* phải */
 .right{
     width: 33%;
@@ -414,9 +521,22 @@ ul.address >li >a{
 }
 
 .icon{
-    margin-top: 10%
+    margin: 20px;
+    
 }
 
 .icon > div > a > img{
     width: 50px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.icon a img {
+    transition: border 0.3s ease;
+    border-radius: 10px;
+}
+
+.icon > div > a > img:hover{
+
+    border: 3px solid black;
 }

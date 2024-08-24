@@ -3,11 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>LUMINEX UNIVERSITY</title>
+    <script src="js/index.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/gototop_jque.js"></script>
 </head>
 <body>
+    <!-- go to top -->
+    <img id="gtt" src="image/back-to-top.png" alt="">
     <!-- header -->
     <header class="header flex">
         <div class="logo flex">
@@ -95,10 +100,26 @@
     <!-- banner -->
     <main>
         <section class="slider">
-            <div><img src="image/banner1.png" alt=""></div>
-            <div><img src="image/banner2.png" alt=""></div>
-            <div><img src="image/banner3.jpg" alt=""></div>
-            <div><img src="image/banner4.jpg" alt=""></div>
+            <div class="list">
+                <img src="image/banner1.png" alt="">
+                <img src="image/banner2.png" alt="">
+                <img src="image/banner3.png" alt="">
+                <img src="image/banner4.png" alt="">
+                <img src="image/banner5.png" alt="">
+            </div>
+            <!-- nút pre và next -->
+           <div class="button">
+                <button id="pre"><</button>
+                <button id="next">></button>
+           </div>
+
+           <ul class="dots">
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+           </ul>
         </section>
 
         <!-- Chương trình đào tạo -->
@@ -119,7 +140,7 @@
                 <img src="image/tuxa.jpg" alt="">
             </div>
         </div>
-        <h4>Tìm hiểu thêm</h4>
+        <h4><a href="#">Tìm hiểu thêm</a></h4>
     </section>
 
     <!-- cơ sở -->
@@ -167,12 +188,6 @@
             </div>
         </div>
     </section>
-
-    <!-- liên hệ -->
-    <!-- <section class="cta">
-        <h1>Enroll For Oue Various Online Courses <br>Anywhere From The World</h1>
-        <a href="" class="hero-btn">Contact Us</a>
-    </section> -->
     </main>
 
     <!-- footer -->
@@ -205,12 +220,12 @@
             <div><b>Email: </b>info@lum.edu.vn</div>
             <div class="icon">
                 <div>
-                    <a href="#"><img src="icon/facebook-svgrepo-com.svg" alt="icon"></a>
-                    <a href="#"><img src="icon/youtube-svgrepo-com.svg" alt="icon"></a>
+                    <a href="#"><img src="icon/facebook-app-symbol.png" alt="icon"></a>
+                    <a href="#"><img src="icon/youtube.png" alt="icon"></a>
                 </div>
                 <div>
-                    <a href="#"><img src="icon/call-medicine-rounded-svgrepo-com.svg" alt="icon"></a>
-                    <a href="#"><img src="icon/linkedin-svgrepo-com.svg" alt="logo"></a>
+                    <a href="#"><img src="icon/tik-tok.png" alt="icon"></a>
+                    <a href="#"><img src="icon/linkedin.png" alt="icon"></a>
                 </div>
             </div>
         </div>
