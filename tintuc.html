@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tin tức - Trường Đại học Luminex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/tintuc.css">
     <script src="js/tintuc.js" defer></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/gototop_jque.js"></script>
 </head>
 <body>
-    <header class="header flex">
+    <!-- <header class="header flex">
         <div class="font">
             <div>VICTORY UNIVERSITY</div>
             <div>ĐẠI HỌC VICTORY</div>
@@ -39,7 +42,92 @@
             <li><a href="#">ĐÀO TẠO</a></li>
             <li><a href="#">NGHIÊN CỨU</a></li>
         </ul>
+    </nav> -->
+
+    <!-- go to top -->
+    <img id="gtt" src="image/back-to-top.png" alt="">
+    <!-- header -->
+    <header class="header flexs">
+        <div class="logo flexs">
+            <img src="image/logo_nobackground.png" alt="">
+            <div class="font">
+                <div>LUMINEX UNIVERSITY</div>
+                <div>ĐẠI HỌC LUMINEX</div>
+            </div>
+        </div>
+        <div>
+            <ul class="menu flexs">
+                <li><a href="#">SINH VIÊN</a></li>
+                <li><a href="#">GIẢNG VIÊN VÀ CÁN BỘ</a></li>
+                <li><a href="#">CỰU SINH VIÊN</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="menu flexs">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- menu chính -->
+    <nav>
+        <ul class="menunav flexs">
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li>
+                <a href="#">GIỚI THIỆU <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Lịch sử phát triển</a></li>
+                    <li><a href="#">Sứ mệnh và tầm nhìn</a></li>
+                    <li><a href="#">Cơ cấu tổ chức</a></li>
+                    <li><a href="#">Đội ngũ giảng viên</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">TIN TỨC <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Tin tức chung</a></li>
+                    <li><a href="#">Thông báo</a></li>
+                    <li><a href="#">Bản tin tháng</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">SỰ KIỆN <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Sự kiện sắp tới</a></li>
+                    <li><a href="#">Sự kiện đã qua</a></li>
+                    <li><a href="#">Hội thảo</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">TUYỂN SINH <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Đại học</a></li>
+                    <li><a href="#">Sau đại học</a></li>
+                    <li><a href="#">Hướng dẫn đăng ký</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">ĐÀO TẠO <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Chương trình cử nhân</a></li>
+                    <li><a href="#">Chương trình thạc sĩ/tiến sĩ</a></li>
+                    <li><a href="#">Chương trình đào tạo từ xa </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">NGHIÊN CỨU <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Đề tài nghiên cứu</a></li>
+                    <li><a href="#">Hợp tác quốc tế</a></li>
+                    <li><a href="#">Công bố khoa học</a></li>
+                </ul>
+            </li>
+        </ul>
     </nav>
+
+
+
     <main>
         <section>
             <input class="input-form" type="search" id="searchInput" placeholder="Tìm kiếm..."/>
@@ -98,8 +186,45 @@
         </section>
     </main>
 
-    <footer>
-        <p></p>
+    <!-- footer -->
+    <footer class="flexs">
+        <div class="left">
+            <div class="flexs">
+                <img src="image/logo_nobackground.png" alt="logo">
+                <div>
+                    <div>LUMINEX UNIVERSITY</div>
+                    <div>Đại học Luminex</div>
+                </div>
+            </div>
+            <ul class="address">
+                <li><a href="#"><b>Cơ sở 1:</b> 603 Đ. Nguyễn Trãi, P. Văn Quán, Thanh Xuân, Hà Nội</a></li>
+                <li><a href="#"><b>Cơ sở 2:</b> 132 Lương Nhữ Hộc, Khuê Trung, Cẩm Lệ, Đà Nẵng</a></li>
+                <li><a href="#"><b>Cơ sở 3:</b> 98 Võ Văn Tần, Phường 6, Quận 3, Hồ Chí Minh</a></li>
+            </ul>
+        </div>
+        <div class="between">
+            <ul>
+                <li><a href="#">Thông tin tiên hệ và hỗ trợ</a></li>
+                <li><a href="#">Sinh viên</a></li>
+                <li><a href="#">Quý khách</a></li>
+                <li><a href="#"> Tin tức</a></li>
+                <li><a href="#">Sự kiện</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <div><b>Holine:</b> 0946048287</div>
+            <div><b>Email: </b>info@lum.edu.vn</div>
+            <div class="icon">
+                <div>
+                    <a href="#"><img src="icon/facebook-app-symbol.png" alt="icon"></a>
+                    <a href="#"><img src="icon/youtube.png" alt="icon"></a>
+                </div>
+                <div>
+                    <a href="#"><img src="icon/tik-tok.png" alt="icon"></a>
+                    <a href="#"><img src="icon/linkedin.png" alt="icon"></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

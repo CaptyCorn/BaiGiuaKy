@@ -9,10 +9,12 @@ body {
 
 /* Phần header */
 
-.flex{
+.flexs{
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+}
+
+a{
+    text-decoration: none;
 }
 
 header{
@@ -21,6 +23,11 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
+
+}
+
+.header > div >img{
+    width: 60px;
 }
 
 .font > div{
@@ -41,6 +48,7 @@ ul.menu > li >a{
     display: block;
     padding: 1rem 1.5rem;
     font-size: small;
+    font-weight: bolder;
 }
 
 ul.menu >li > a:hover{
@@ -51,7 +59,22 @@ ul.menu >li > a:hover{
     right: 0;
 }
 
-/* Phần nav */
+.fa-solid{
+    font-size: large;
+}
+
+/* go to top */
+#gtt{
+    display: block;
+    color: #1e4456;
+    width: 60px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    z-index: 999999;
+}
+
+/* 1. Phần nav */
 
 nav{
     background-color: white;
@@ -72,20 +95,90 @@ ul.menunav{
     width: 100%;
 }
 
+ul.menunav li{
+    position: relative;
+}
+
 ul.menunav >li >a{
     text-decoration: none;
-    color: #553f1f;
+    color: #1e4456;
     display: block;
-    padding: 1rem ;
+    padding: 1rem 3rem;
     font-weight: bold;
 
 }
 
 ul.menunav >li >a:hover{
-    background-color: #a68049;
+    background-color: #1e4456;
     color: white;
 }
 
+/* 2. Phần nav_menu */
+.menunav li {
+    position: relative;
+}
+
+.menunav a {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menunav a:hover {
+    background-color: #f0f0f0;
+}
+
+        /* Chỉnh mũi tên sổ xuống */
+.menunav li > a .fa-chevron-right {
+    margin-left: 5px;
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+.menunav li:hover > .dropdown {
+    display: block;
+}
+
+
+.menunav li:hover > a .fa-chevron-right {
+    transform: rotate(90deg); /* Xoay mũi tên khi hover */
+}
+
+/* nav_menu con */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.dropdown li {
+    width: 200px; /* Điều chỉnh độ rộng của menu con */
+}
+
+.dropdown a {
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Phần tin tức */
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 
 main {
     padding: 40px 20px;
@@ -136,12 +229,91 @@ main {
     color: #888;
 }
 
-footer {
-    background-color:#553f1f ;
-    color: #fff;
+/* Phần footer */
+
+/* footer */
+footer{
+    background-color: #279cd2;
+    color: white;
+}
+
+        /* trái */
+.left{
+    width: 33%;
+    font-size: large;
+}
+
+.left > div > img{
+    width: 100px;
+}
+
+ul.address{
+    list-style-type: none;
+}
+
+ul.address li{
+    margin: 10px;
+}
+
+ul.address >li >a{
+    color: white;
+}
+
+.left > div{
+    align-items: center;
+}
+
+        /* giữa */
+.between{
+    width: 33%;
     text-align: center;
-    padding: 15px 0;
-    margin-top: 50px;
-    font-size: 0.9rem;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.between > ul{
+    list-style-type: none;
+}
+
+.between > ul > li > a{
+    color: white;
+}
+
+.between ul >li{
+    font-size: large;
+    padding: 10px;
+}
+
+.between li a:hover{
+    text-decoration: underline;
+}
+
+        /* phải */
+.right{
+    width: 33%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.right div{
+    font-size: large;
+}
+
+.icon{
+    margin: 20px;
+    
+}
+
+.icon > div > a > img{
+    width: 50px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.icon a img {
+    transition: border 0.3s ease;
+    border-radius: 10px;
+}
+
+.icon > div > a > img:hover{
+
+    border: 3px solid black;
 }
