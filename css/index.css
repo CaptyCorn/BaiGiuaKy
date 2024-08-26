@@ -359,9 +359,13 @@ h4 > a{
     margin: 0 auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: #279cd2;
+    background-color: #f0f0f0;
     font-size: 20px;
-    color: #fff;
+    color: #279cd2;
+}
+
+h4 > a:hover{
+    background-color:#d4dbcd; 
 }
 
     /* thẻ p */
