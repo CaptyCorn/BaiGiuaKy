@@ -16,3 +16,11 @@ function searchNews() {
         }
     });
 }
+
+document.getElementById('showMoreBtn').addEventListener('click', function() {
+    const hiddenNews = document.querySelectorAll('.hidden-news');
+    hiddenNews.forEach(function(item) {
+        item.style.display = 'block';
+    });
+    this.style.display = 'none'; // Ẩn nút "Xem thêm" sau khi nhấn
+});
