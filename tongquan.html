@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <title>Nghiên cứu - Trường Đại học Luminex</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>LUMINEX UNIVERSITY</title>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="css/tongquan.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/gototop_jque.js"></script>
 </head>
@@ -14,8 +13,8 @@
     <!-- go to top -->
     <img id="gtt" src="image/back-to-top.png" alt="">
     <!-- header -->
-    <header class="header flex">
-        <div class="logo flex">
+    <header class="header flexs">
+        <div class="logo flexs">
             <img src="image/logo_nobackground.png" alt="">
             <div class="font">
                 <div>LUMINEX UNIVERSITY</div>
@@ -23,7 +22,7 @@
             </div>
         </div>
         <div>
-            <ul class="menu flex">
+            <ul class="menu flexs">
                 <li><a href="#">SINH VIÊN</a></li>
                 <li><a href="#">GIẢNG VIÊN VÀ CÁN BỘ</a></li>
                 <li><a href="#">CỰU SINH VIÊN</a></li>
@@ -31,7 +30,7 @@
             </ul>
         </div>
         <div>
-            <ul class="menu flex">
+            <ul class="menu flexs">
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
             </ul>
@@ -39,7 +38,7 @@
     </header>
     <!-- menu chính -->
     <nav>
-        <ul class="menunav flex">
+        <ul class="menunav flexs">
             <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
             <li>
                 <a href="#">GIỚI THIỆU <i class="fa-solid fa-chevron-right"></i></a>
@@ -85,115 +84,27 @@
             <li>
                 <a href="#">NGHIÊN CỨU <i class="fa-solid fa-chevron-right"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">Tổng quan</a></li>
+                    <li><a href="#">Đề tài nghiên cứu</a></li>
                     <li><a href="#">Hợp tác quốc tế</a></li>
                     <li><a href="#">Công bố khoa học</a></li>
                 </ul>
             </li>
         </ul>
-    </nav>
-    <!-- banner đầu -->
-    <section class="pic flex">
-        <img src="image/picmain1.gif" alt="banner">
-        <div class="down">Chào mừng đến với LUMER</div>
-    </section>
-    <!-- banner -->
-    <main>
-        <section class="slider">
-            <div class="list">
-                <img src="image/banner1.png" alt="">
-                <img src="image/banner2.png" alt="">
-                <img src="image/banner3.png" alt="">
-                <img src="image/banner4.png" alt="">
-                <img src="image/banner5.png" alt="">
-            </div>
-            <!-- nút pre và next -->
-           <div class="button">
-                <button id="pre"><</button>
-                <button id="next">></button>
-           </div>
-
-           <ul class="dots">
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-           </ul>
-        </section>
-
-        <!-- Chương trình đào tạo -->
-    <section class="train">
-        <h1>Đào tạo</h1>
-        <p>Đào tạo công dân toàn cầu.</p>
-        <div class="row">
-            <div class="train-col">
-                <h3>Chương trình cử nhân</h3>
-                <img src="image/cu_nhan.webp" alt="">
-            </div>
-            <div class="train-col">
-                <h3>Chương trình thạc sĩ/tiến sĩ</h3>
-                <img src="image/tiensi.jpg" alt="">
-            </div>
-            <div class="train-col">
-                <h3>Chương trình đào tạo từ xa</h3>
-                <img src="image/tuxa.jpg" alt="">
-            </div>
-        </div>
-        <h4><a href="#">Tìm hiểu thêm</a></h4>
-    </section>
-
-    <!-- cơ sở -->
-    <section class="campus">
-        <h1>Các cơ sở</h1>
-        <p>Chúng tôi sở hữu cơ sở hiện đại phân bố rộng rãi trên toàn quốc.</p>
-        <div class="row">
-            <div class="campus-col">
-                <img src="image/hanoi.png">
-                <div class="layer">
-                    <h3>Hà Nội</h3>
-                </div>
-            </div>
-            <div class="campus-col">
-                <img src="image/danang.png">
-                <div class="layer">
-                    <h3>Đà Nẵng</h3>
-                </div>
-            </div>
-            <div class="campus-col">
-                <img src="image/hochiminh.png">
-                <div class="layer">
-                    <h3>Hồ Chí Minh</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- cơ sở vật chất -->
-    <section class="facilities">
-        <h1>Cơ sở vật chất</h1>
-        <p>Cơ sở vật chất đầy đủ tiện nghi. Đảm bảo đầy đủ tiện ích cho sinh viên.</p>
-        <div class="row">
-            <div class="facilities-col">
-                <img src="image/library.png">
-                <h3>Thư viện</h3>
-            </div>
-            <div class="facilities-col">
-                <img src="image/basketball.png">
-                <h3>Sân chơi lớn</h3>
-            </div>
-            <div class="facilities-col">
-                <img src="image/cafeteria.png">
-                <h3>Thực phẩm ngon và lành mạnh</h3>
-            </div>
-        </div>
-    </section>
-    </main>
-
-    <!-- footer -->
-     <footer class="flex">
+    </nav> 
+        
+    <div class="news-section">
+        <h2>TỔNG QUAN</h2>
+        <h3>1. Giới thiệu hoạt động Khoa học Công nghệ của Trường và các chiến lược chung</h3>
+        <p>Trường Đại học Luminex trực thuộc Đại học Quốc gia Thành phố Hồ Chí Minh (ĐHQG-HCM) là một trong những trường kỹ thuật hàng đầu trong cả nước về đào tạo nguồn nhân lực chất lượng cao và nghiên cứu khoa học chủ yếu phục vụ khu vực phía Nam của đất nước với một lịch sử phát triển khá dài và trải qua nhiều thời kỳ kể từ tiền thân là Trung tâm Quốc gia Kỹ thuật được thành lập từ năm 1957. Hiện nay, Trường đang từng bước phát triển một cách bền vững để trở thành một đại học nghiên cứu và nâng tầm lên hàng khu vực và thế giới nhờ vào nguồn nhân lực có chất lượng cao cũng như cơ sở vật chất được đầu tư trong thời gian dài.</p>
+        <p>Một trong những sứ mạng của Trường hiện nay là sáng tạo tri thức mới thông qua nghiên cứu khoa học – chuyển giao công nghệ, khởi nghiệp – đổi mới sáng tạo nhằm để thực hiện trách nhiệm xã hội và phục vụ cho đất nước, đáp ứng các sứ mạng của nhà Trường, hệ thống các giá trị cốt lõi của Trường hướng tới là trong đó có tinh thần tiên phong, khởi nghiệp, đổi mới, sáng tạo và hội nhập quốc tế trong đào tạo, nghiên cứu khoa học và kết nối giữa nhà trường, cộng đồng và doanh nghiệp. Trên cơ sở đó, trong các mục tiêu chiến lược quan trọng của Trường trong giai đoạn 2021-2025 có mục tiêu là xuất sắc trong khoa học – công nghệ phục vụ chuyển giao tri thức thông qua tăng cường năng lực cộng bộ khoa học công nghệ; tăng cường nghiên cứu ứng dụng và chuyển giao công nghệ, hợp tác công nghiệp/địa phương/quốc tế; đào tạo gắn liền với nghiên cứu khoa học mang bản sắc Đại học Luminex.</p>
+        <h3>2. Các hoạt động Khoa học Công nghệ</h3>
+        <img src="image/tongquan.bmp" alt="Hình ảnh">
+    </div>
+        
+     <!-- footer -->
+     <footer class="flexs">
         <div class="left">
-            <div class="flex">
+            <div class="flexs">
                 <img src="image/logo_nobackground.png" alt="logo">
                 <div>
                     <div>LUMINEX UNIVERSITY</div>
@@ -229,6 +140,6 @@
                 </div>
             </div>
         </div>
-     </footer>
+    </footer>
 </body>
 </html>
