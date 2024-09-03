@@ -21,14 +21,15 @@ header{
 
 }
 
-.header > div >img{
+.header img{
     width: 60px;
 }
 
 .font > div{
     font-family: cursive;
-    padding: 0.1rem;
+    padding: 0.2rem;
     font-weight: bolder;
+    color: white;
 }
 
 ul.menu{
@@ -97,7 +98,7 @@ ul.menunav >li >a{
     text-decoration: none;
     color: #1e4456;
     display: block;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     font-weight: bold;
 
 }
@@ -142,6 +143,7 @@ ul.menunav >li >a:hover{
 }
 
 /* nav_menu con */
+
 .dropdown {
     display: none;
     position: absolute;
@@ -150,10 +152,12 @@ ul.menunav >li >a:hover{
     background-color: #fff;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
+    list-style-type: none;
+    padding-left: 0;
 }
 
 .dropdown li {
-    width: 200px; /* Điều chỉnh độ rộng của menu con */
+    width: 240px; /* Điều chỉnh độ rộng của menu con */
 }
 
 .dropdown a {
