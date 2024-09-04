@@ -8,21 +8,26 @@
     <link rel="stylesheet" href="css/cbkh.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/gototop_jque.js"></script>
+    <link rel="stylesheet" href="css/navfooter.css">
+    <link rel="stylesheet" href="mobile/navmobile.css">
+    <script src="mobile/mobile.js"></script>
 </head>
 <body>
     <!-- go to top -->
     <img id="gtt" src="image/back-to-top.png" alt="">
     <!-- header -->
-    <header class="header flexs">
-        <div class="logo flexs">
-            <img src="image/logo_nobackground.png" alt="">
-            <div class="font">
-                <div>LUMINEX UNIVERSITY</div>
-                <div>ĐẠI HỌC LUMINEX</div>
-            </div>
+    <header class="header flex">
+        <div>
+            <a href="#" class="flex">
+                <img src="image/logo_nobackground.png" alt="">
+                <div class="font">
+                    <div>LUMINEX UNIVERSITY</div>
+                    <div>ĐẠI HỌC LUMINEX</div>
+                </div>
+            </a>
         </div>
         <div>
-            <ul class="menu flexs">
+            <ul class="menu flex">
                 <li><a href="#">SINH VIÊN</a></li>
                 <li><a href="#">GIẢNG VIÊN VÀ CÁN BỘ</a></li>
                 <li><a href="#">CỰU SINH VIÊN</a></li>
@@ -30,39 +35,35 @@
             </ul>
         </div>
         <div>
-            <ul class="menu flexs">
+            <ul class="menu flex">
                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </div>
     </header>
     <!-- menu chính -->
-    <nav>
-        <ul class="menunav flexs">
+    <nav class="mobile-nav">
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="menunav flex">
             <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
             <li>
                 <a href="#">GIỚI THIỆU <i class="fa-solid fa-chevron-right"></i></a>
                 <ul class="dropdown">
+                    <li><a href="#">Tổng quan về trường</a></li>
                     <li><a href="#">Lịch sử phát triển</a></li>
                     <li><a href="#">Sứ mệnh và tầm nhìn</a></li>
                     <li><a href="#">Cơ cấu tổ chức</a></li>
-                    <li><a href="#">Đội ngũ giảng viên</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">TIN TỨC <i class="fa-solid fa-chevron-right"></i></a>
+                <a href="#">TIN TỨC & SỰ KIỆN <i class="fa-solid fa-chevron-right"></i></a>
                 <ul class="dropdown">
                     <li><a href="#">Tin tức chung</a></li>
-                    <li><a href="#">Thông báo</a></li>
-                    <li><a href="#">Bản tin tháng</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">SỰ KIỆN <i class="fa-solid fa-chevron-right"></i></a>
-                <ul class="dropdown">
+                    <li><a href="#">Hội thảo, hội nghị</a></li>
+                    <li><a href="#">Hoạt động ngoại khóa</a></li>
                     <li><a href="#">Sự kiện sắp tới</a></li>
-                    <li><a href="#">Sự kiện đã qua</a></li>
-                    <li><a href="#">Hội thảo</a></li>
                 </ul>
             </li>
             <li>
@@ -70,54 +71,66 @@
                 <ul class="dropdown">
                     <li><a href="#">Đại học</a></li>
                     <li><a href="#">Sau đại học</a></li>
-                    <li><a href="#">Hướng dẫn đăng ký</a></li>
+                    <li><a href="#">Học bổng/hỗ trợ tài chính</a></li>
                 </ul>
             </li>
             <li>
                 <a href="#">ĐÀO TẠO <i class="fa-solid fa-chevron-right"></i></a>
                 <ul class="dropdown">
-                    <li><a href="#">Chương trình cử nhân</a></li>
-                    <li><a href="#">Chương trình thạc sĩ/tiến sĩ</a></li>
-                    <li><a href="#">Chương trình đào tạo từ xa </a></li>
+                    <li><a href="#">Các khoa/ngành học</a></li>
+                    <li><a href="#">Đào tạo cử nhân, thạc sĩ, tiến sĩ</a></li>
+                    <li><a href="#">Nội dung các môn học</a></li>
+                    <li><a href="#">Đào tạo liên kết quốc tế</a></li>
+                    
                 </ul>
             </li>
             <li>
                 <a href="#">NGHIÊN CỨU <i class="fa-solid fa-chevron-right"></i></a>
                 <ul class="dropdown">
+                    <li><a href="#">Tổng quan</a></li>
                     <li><a href="#">Đề tài nghiên cứu</a></li>
                     <li><a href="#">Hợp tác quốc tế</a></li>
                     <li><a href="#">Công bố khoa học</a></li>
                 </ul>
             </li>
+            <li>
+                <a href="#">CỔNG THÔNG TIN<i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Thông tin sinh viên</a></li>
+                    <li><a href="#">Thông tin giảng viên</a></li>
+                    <li><a href="#">Thông tin cựu sinh viên</a></li>
+                </ul>
+            </li>
         </ul>
-    </nav> 
+    </nav>
     <main>    
         <div class="news-section">
             <h2>CÔNG BỐ KHOA HỌC</h2>
-            <div class="flex">
-                <div class="news-item flex">
+            <div class="flexs">
+                <div class="news-item flexs">
                     <img src="image/cbkh1.PNG" alt="Hình ảnh tin tức 1">
                     <a href="https://hcmut.edu.vn/news/item/9783" target="_blank">Bài báo TOP 20 Q1 năm 2022</a>
                 </div>
-                <div class="news-item flex">
+                <div class="news-item flexs">
                     <img src="image/cbkh2.PNG" alt="Hình ảnh tin tức 2">
                     <a href="https://hcmut.edu.vn/news/item/9781" target="_blank">Công bố Khoa học trong năm 2022</a>
                 </div>
-                <div class="news-item flex">
+                <div class="news-item flexs">
                     <img src="image/cbkh3.PNG" alt="Hình ảnh tin tức 3">
                     <a href="https://hcmut.edu.vn/news/item/6656" target="_blank">Bài báo Top 20 Q1 năm 2021</a>
                 </div>
-                <div class="news-item flex">
+                <div class="news-item flexs">
                     <img src="image/cbkh4.PNG" alt="Hình ảnh tin tức 4">
                     <a href="https://hcmut.edu.vn/news/item/6650" target="_blank">Công bố Khoa học trong năm 2021</a>
                 </div>
             </div>
         </div>
     </main>
-     <!-- footer -->
-     <footer class="flexs">
+     
+    <!-- footer -->
+    <footer class="flex">
         <div class="left">
-            <div class="flexs">
+            <div class="flex">
                 <img src="image/logo_nobackground.png" alt="logo">
                 <div>
                     <div>LUMINEX UNIVERSITY</div>
@@ -153,6 +166,6 @@
                 </div>
             </div>
         </div>
-    </footer>
+     </footer>
 </body>
 </html>

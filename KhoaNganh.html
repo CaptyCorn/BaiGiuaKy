@@ -4,101 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Khoa/ngành học</title>
+    <link rel="stylesheet" href="css/navfooter.css">
     <link rel="stylesheet" href="css/KhoaNganh.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/gototop_jque.js"></script>
+    <link rel="stylesheet" href="mobile/navmobile.css">
+    <script src="mobile/mobile.js"></script>
 </head>
 <body>
-     <!-- go to top -->
-     <img id="gtt" src="image/back-to-top.png" alt="">
-     <!-- header -->
-     <header class="header flex">
-         <div>
-             <a href="#" class="flex">
-                 <img src="image/logo_nobackground.png" alt="">
-                 <div class="font">
-                     <div>LUMINEX UNIVERSITY</div>
-                     <div>ĐẠI HỌC LUMINEX</div>
-                 </div>
-             </a>
-         </div>
-         <div>
-             <ul class="menu flex">
-                 <li><a href="#">SINH VIÊN</a></li>
-                 <li><a href="#">GIẢNG VIÊN VÀ CÁN BỘ</a></li>
-                 <li><a href="#">CỰU SINH VIÊN</a></li>
-                 <li><a href="#">LIÊN HỆ</a></li>
-             </ul>
-         </div>
-         <div>
-             <ul class="menu flex">
-                 <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                 <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-             </ul>
-         </div>
-     </header>
-     <!-- menu chính -->
-     <nav>
-         <ul class="menunav flex">
-             <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
-             <li>
-                 <a href="#">GIỚI THIỆU <i class="fa-solid fa-chevron-right"></i></a>
-                 <ul class="dropdown">
-                     <li><a href="#">Tổng quan về trường</a></li>
-                     <li><a href="#">Lịch sử phát triển</a></li>
-                     <li><a href="#">Sứ mệnh và tầm nhìn</a></li>
-                     <li><a href="#">Cơ cấu tổ chức</a></li>
-                 </ul>
-             </li>
-             <li>
-                 <a href="#">TIN TỨC & SỰ KIỆN <i class="fa-solid fa-chevron-right"></i></a>
-                 <ul class="dropdown">
-                     <li><a href="#">Tin tức chung</a></li>
-                     <li><a href="#">Hội thảo, hội nghị</a></li>
-                     <li><a href="#">Hoạt động ngoại khóa</a></li>
-                     <li><a href="#">Sự kiện sắp tới</a></li>
-                 </ul>
-             </li>
-             <li>
-                 <a href="#">TUYỂN SINH <i class="fa-solid fa-chevron-right"></i></a>
-                 <ul class="dropdown">
-                     <!-- <li><a href="#">Chương trình đào tạo</a></li>
-                     <li><a href="#">Hướng dẫn đăng ký tuyển sinh</a></li> -->
-                     <li><a href="#">Đại học</a></li>
-                     <li><a href="#">Sau đại học</a></li>
-                     <li><a href="#">Học bổng/hỗ trợ tài chính</a></li>
-                 </ul>
-             </li>
-             <li>
-                 <a href="#">ĐÀO TẠO <i class="fa-solid fa-chevron-right"></i></a>
-                 <ul class="dropdown">
-                     <li><a href="#">Các khoa/ngành học</a></li>
-                     <li><a href="#">Đào tạo cử nhân, thạc sĩ, tiến sĩ</a></li>
-                     <li><a href="#">Nội dung các môn học</a></li>
-                     <li><a href="#">Đào tạo liên kết quốc tế</a></li>
-                     
-                 </ul>
-             </li>
-             <li>
-                 <a href="#">NGHIÊN CỨU <i class="fa-solid fa-chevron-right"></i></a>
-                 <ul class="dropdown">
-                     <li><a href="#">Tổng quan</a></li>
-                     <li><a href="#">Đề tài nghiên cứu</a></li>
-                     <li><a href="#">Hợp tác quốc tế</a></li>
-                     <li><a href="#">Công bố khoa học</a></li>
-                 </ul>
-             </li>
-             <li>
-                 <a href="#">CỔNG THÔNG TIN<i class="fa-solid fa-chevron-right"></i></a>
-                 <ul class="dropdown">
-                     <li><a href="#">Thông tin sinh viên</a></li>
-                     <li><a href="#">Thông tin giảng viên</a></li>
-                     <li><a href="#">Thông tin cựu sinh viên</a></li>
-                 </ul>
-             </li>
-         </ul>
-     </nav>
+    <!-- go to top -->
+    <img id="gtt" src="image/back-to-top.png" alt="">
+    <!-- header -->
+    <header class="header flex">
+        <div>
+            <a href="#" class="flex">
+                <img src="image/logo_nobackground.png" alt="">
+                <div class="font">
+                    <div>LUMINEX UNIVERSITY</div>
+                    <div>ĐẠI HỌC LUMINEX</div>
+                </div>
+            </a>
+        </div>
+        <div>
+            <ul class="menu flex">
+                <li><a href="#">SINH VIÊN</a></li>
+                <li><a href="#">GIẢNG VIÊN VÀ CÁN BỘ</a></li>
+                <li><a href="#">CỰU SINH VIÊN</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="menu flex">
+                <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- menu chính -->
+    <nav class="mobile-nav">
+        <div class="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <ul class="menunav flex">
+            <li><a href="#"><i class="fa-solid fa-house"></i></a></li>
+            <li>
+                <a href="#">GIỚI THIỆU <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Tổng quan về trường</a></li>
+                    <li><a href="#">Lịch sử phát triển</a></li>
+                    <li><a href="#">Sứ mệnh và tầm nhìn</a></li>
+                    <li><a href="#">Cơ cấu tổ chức</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">TIN TỨC & SỰ KIỆN <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Tin tức chung</a></li>
+                    <li><a href="#">Hội thảo, hội nghị</a></li>
+                    <li><a href="#">Hoạt động ngoại khóa</a></li>
+                    <li><a href="#">Sự kiện sắp tới</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">TUYỂN SINH <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Đại học</a></li>
+                    <li><a href="#">Sau đại học</a></li>
+                    <li><a href="#">Học bổng/hỗ trợ tài chính</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">ĐÀO TẠO <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Các khoa/ngành học</a></li>
+                    <li><a href="#">Đào tạo cử nhân, thạc sĩ, tiến sĩ</a></li>
+                    <li><a href="#">Nội dung các môn học</a></li>
+                    <li><a href="#">Đào tạo liên kết quốc tế</a></li>
+                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">NGHIÊN CỨU <i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Tổng quan</a></li>
+                    <li><a href="#">Đề tài nghiên cứu</a></li>
+                    <li><a href="#">Hợp tác quốc tế</a></li>
+                    <li><a href="#">Công bố khoa học</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">CỔNG THÔNG TIN<i class="fa-solid fa-chevron-right"></i></a>
+                <ul class="dropdown">
+                    <li><a href="#">Thông tin sinh viên</a></li>
+                    <li><a href="#">Thông tin giảng viên</a></li>
+                    <li><a href="#">Thông tin cựu sinh viên</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
     <main>
         <h1>TÌM HIỂU NGÀNH ĐÀO TẠO</h1>

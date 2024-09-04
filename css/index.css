@@ -65,8 +65,8 @@ ul.menu >li > a:hover{
     color: #1e4456;
     width: 60px;
     position: fixed;
-    right: 10px;
-    bottom: 10px;
+    right: 20px;
+    bottom: 20px;
     z-index: 999999;
 }
 /* 1. Phần nav */

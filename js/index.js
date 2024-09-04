@@ -4,7 +4,6 @@ window.onload = function() {
     let dots=document.querySelectorAll('.slider .dots li');
     let pre = document.getElementById('pre');
     let next = document.getElementById('next');
-
     let active=0;
     let length =items.length - 1;   
     // chuyến hình
