@@ -205,7 +205,7 @@ ul.menunav >li >a:hover{
 }
 
 .news-content {
-    flex: 1; /* Để văn bản chiếm hết chiều rộng còn lại */
+    flex: 1;
 }
 
 .news-item:hover {
@@ -230,6 +230,32 @@ ul.menunav >li >a:hover{
 
 .news-content p {
     margin: 0 0 10px;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+
+    .news-item img {
+        min-width: 450px; 
+        height: auto;
+    }
+
+    .news-content {
+        flex: none; 
+        width: 100%; 
+    }
+
+    .news-item a {
+        font-size: 1rem; 
+    }
+
+    .news-content p {
+        font-size: 0.875rem; 
+    }
 }
 
 /* Phần footer */

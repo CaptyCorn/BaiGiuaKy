@@ -249,6 +249,30 @@ main {
     background-color: #1e4456;
 }
 
+@media (max-width: 768px) {
+    .news-item {
+        width: 100%; 
+        margin-bottom: 20px;
+    }
+
+    .flex {
+        gap: 15px; 
+    }
+
+    .news-section h2 {
+        font-size: 1.5rem; 
+        margin-bottom: 20px;
+    }
+
+    main {
+        padding: 20px 10px; 
+    }
+    
+    #showMoreBtn {
+        font-size: 0.9rem; 
+    }
+}
+
 /* Phần footer */
 
 /* footer */

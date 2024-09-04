@@ -172,7 +172,7 @@ ul.menunav >li >a:hover{
     background-color: #f0f0f0;
 }
 
-/*Phần đại học */
+/*Phần công bố khoa học */
 .flex{
     display: flex;
     gap: 20px;
@@ -221,6 +221,28 @@ ul.menunav >li >a:hover{
     text-decoration: none;
     color: #333;
     font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .news-item {
+        flex-direction: row;
+        align-items: center; 
+        padding: 10px; 
+        flex-basis: 100%; 
+        box-sizing: border-box;
+    }
+
+    .news-item img {
+        max-width: 100%; 
+        height: auto; 
+        margin-bottom: 10px; 
+    }
+
+    .news-item a {
+        font-size: 1rem; 
+        text-align: left; 
+        white-space: nowrap;
+    }
 }
 
 /* Phần footer */
