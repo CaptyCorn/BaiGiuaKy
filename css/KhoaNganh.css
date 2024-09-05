@@ -48,3 +48,9 @@ h1{
     transform: translateY(-10px);
 }
 
+/* Phần mobile */
+@media screen and (max-width: 768px){
+    .department{
+        width: 90%;
+    }
+}

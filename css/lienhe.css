@@ -70,3 +70,28 @@ main{
 .addr > div{
     text-align: center;
 }
+
+
+/* phần mobile */
+
+@media screen and (max-width: 768px){
+    main > h1{
+        padding: 0 10px;
+    }
+
+    .divide{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    
+    .devide >div{
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .form-group{
+        width: 100%;
+        
+    }
+}
